@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #fbf5ec;
+  --cream-2: #f3e9d8;
+  --ink: #211a14;
+  --ink-soft: #4a4038;
+  --coffee: #4a2f22;
+  --coffee-dark: #2c1c13;
+  --purple: #7a1ff0;
+  --purple-dark: #5a15b3;
+  --purple-soft: #efe2ff;
+  --gold: #e7b76b;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-2: var(--cream-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-coffee: var(--coffee);
+  --color-coffee-dark: var(--coffee-dark);
+  --color-purple: var(--purple);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-soft: var(--purple-soft);
+  --color-gold: var(--gold);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.gradient-hero {
+  background: linear-gradient(120deg, #fdf1e0 0%, #fbe4ec 45%, #eee0fb 100%);
+}
+
+.gradient-section {
+  background: linear-gradient(180deg, #fbf5ec 0%, #f3e9d8 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
