@@ -10,17 +10,29 @@ export default function Hero() {
             🍄 5 Functional Mushrooms · Naturally Low Caffeine
           </span>
           <h1 className="font-display text-balance text-4xl sm:text-5xl lg:text-[3.4rem] font-medium leading-[1.08] text-ink">
-            Clear, calm focus.
+            Coffee, upgraded.
             <br />
-            Without the crash.
+            Your daily focus, without the crash.
           </h1>
           <p className="mt-5 text-base sm:text-lg text-ink-soft max-w-lg leading-relaxed">
-            Mushoffee is the fast-growing coffee alternative packed with
-            functional mushrooms and nootropics — Lion&rsquo;s Mane, Chaga,
-            Cordyceps, Reishi and Turkey Tail — for sharper focus, a lifted
-            mood and sustained energy throughout the day.
+            Mushoffee combines organic mushrooms and adaptogens to support
+            focus, energy and mood — with no jitters or crash. Enjoy smooth,
+            sustained energy with a fraction of the caffeine of regular
+            coffee.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="mt-4 flex items-center gap-2">
+            <div className="flex text-gold" aria-hidden>
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                  <path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z" />
+                </svg>
+              ))}
+            </div>
+            <span className="text-sm font-medium text-ink-soft">
+              Australia&rsquo;s favourite coffee alternative
+            </span>
+          </div>
+          <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <Link
               href="#notify"
               className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-purple px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-purple/20 hover:bg-purple-dark transition-colors"
@@ -52,16 +64,16 @@ export default function Hero() {
         </div>
 
         <div className="order-1 lg:order-2 relative">
-          <div className="relative mx-auto max-w-sm lg:max-w-md">
+          <div className="relative mx-auto max-w-md lg:max-w-lg rounded-[1.75rem] overflow-hidden shadow-2xl shadow-purple/20 ring-1 ring-ink/5">
             <Image
-              src="/images/product-bag-double.png"
-              alt="The Mushoffee mushroom coffee pouches"
-              width={1080}
-              height={1080}
+              src="/images/hero-visual.png"
+              alt="Iced Mushoffee splashing beside a pouch of mushroom coffee"
+              width={648}
+              height={538}
               priority
-              className="w-full h-auto drop-shadow-2xl"
+              className="w-full h-auto"
             />
-            <span className="absolute top-4 left-1/2 -translate-x-1/2 sm:top-6 sm:left-auto sm:right-2 sm:translate-x-0 rounded-full bg-ink text-cream text-xs font-semibold px-4 py-2 shadow-lg whitespace-nowrap">
+            <span className="absolute top-4 right-4 rounded-full bg-ink text-cream text-xs font-semibold px-4 py-2 shadow-lg whitespace-nowrap">
               Currently Out of Stock
             </span>
           </div>
