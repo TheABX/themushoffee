@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <Link
               href="#notify"
-              className="inline-flex items-center justify-center rounded-full bg-purple px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-purple/20 hover:bg-purple-dark transition-colors"
+              className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-purple px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-purple/20 hover:bg-purple-dark transition-colors"
             >
               Join the Waitlist
             </Link>

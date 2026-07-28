@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Sprout from "@/components/icons/Sprout";
 
 export default function Sourcing() {
   return (
@@ -33,7 +34,7 @@ export default function Sourcing() {
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <div className="w-12 h-12 rounded-xl bg-cream/10 flex items-center justify-center mb-4">
-              <Image src="/images/icon-laurel.png" alt="" width={26} height={26} className="w-6 h-6 opacity-90" />
+              <Sprout className="w-6 h-6 text-gold" />
             </div>
             <h3 className="font-display font-semibold text-lg">
               Organically Di-Tao Grown

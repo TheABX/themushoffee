@@ -26,7 +26,7 @@ export default function Guarantee() {
         <div className="mt-8">
           <Link
             href="#notify"
-            className="inline-flex items-center justify-center rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-cream hover:bg-coffee-dark transition-colors"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-cream hover:bg-coffee-dark transition-colors"
           >
             Notify Me When It&rsquo;s Back
           </Link>
